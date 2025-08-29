@@ -4,8 +4,8 @@
 0_aptly_install.sh 
 
 ## .aptly.conf
-On Linux, please copy .aptly.conf to $HOME
-'rootDir' should be created on filesystems that support hard links.
+* On Linux, please copy .aptly.conf to $HOME  
+* 'rootDir' should be created on filesystems that support hard links.
 ``` json
 {
   "rootDir": "/mirror",
