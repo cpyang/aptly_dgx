@@ -50,4 +50,4 @@
 
 ## Delete current publish and publish repos from snapshots
 * ```4_aptly_publish.sh```
-* ``` aptly publis list``` to list existing publish
+* ``` aptly publish list``` to list existing publish
