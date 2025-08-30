@@ -1,7 +1,8 @@
 # Aptly scripts for creating DGX apt repos
+* Aptly (https://www.aptly.info/doc/overview/)
 
 ## Install Aply Packages
-0_aptly_install.sh 
+* ```0_aptly_install.sh```
 
 ## .aptly.conf
 * On Linux, please copy .aptly.conf to $HOME  
@@ -37,14 +38,16 @@
   "enableMetricsEndpoint": false
 }
 ```
-## Configure Nvidia DGX OS 7 related repos
-1_aptly_config.sh
+## Configure Nvidia DGX OS 7 related repo sources
+* ```1_aptly_config.sh```
 
 ## Pull repo mirrors 
-2_aptly_update.sh 
+* ```2_aptly_update.sh``` 
 
 ## Create Snapshot
-3_aptly_snapshot.sh
+* ```3_aptly_snapshot.sh```
+* ``` aptly snapshot list``` to list current snapshots
 
-## Publish repos from snapshots
-4_aptly_publish.sh
+## Delete current publish and publish repos from snapshots
+* ```4_aptly_publish.sh```
+* ``` aptly publis list``` to list existing publish
