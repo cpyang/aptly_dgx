@@ -1,5 +1,10 @@
 # Aptly scripts for creating DGX apt repos
 * Aptly (https://www.aptly.info/doc/overview/)
+![The schema of aptly’s commands and transitions between entities][https://www.aptly.info/img/schema.png]
+** mirror - mirror of remote repository, consists of metadata, list of packages and package files
+** local repo - local package repository, consists of metadata, packages and files, packages can be easily added and removed
+** snapshot - immutable list of packages, basic block to implement repeatability and controlled changes
+** published - repository published representation of aptly generated snapshot or local repository, ready to be consumed by apt tools
 
 ## Install Aply Packages
 * ```0_aptly_install.sh```
