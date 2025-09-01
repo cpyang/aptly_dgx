@@ -11,7 +11,7 @@ published - repository published representation of aptly generated snapshot or l
 
 ## .aptly.conf
 * On Linux, please copy .aptly.conf to $HOME  
-* 'rootDir' should be created on filesystems that support hard links.
+* 'rootDir' should be created on filesystems that supports hard link.
 ``` json
 {
   "rootDir": "/mirror",
@@ -54,6 +54,7 @@ published - repository published representation of aptly generated snapshot or l
 * ``` aptly snapshot list``` to list current snapshots
 
 ## Delete current publish and publish repos from snapshots
+* By default, publish will generate hard links, so make sure that the "aptly rootDir" is on filesystems that supports hard link.
 * ```4_aptly_publish.sh```
 * ``` aptly publish list``` to list existing publish
 * run ```aptly serve``` to serve the published repos with http; or copy ```public``` folder for air-gapped environment.  
