@@ -56,3 +56,4 @@ published - repository published representation of aptly generated snapshot or l
 ## Delete current publish and publish repos from snapshots
 * ```4_aptly_publish.sh```
 * ``` aptly publish list``` to list existing publish
+* run ```aptly serve``` to serve the published repos with http; or copy ```public``` folder for air-gapped environment.  
